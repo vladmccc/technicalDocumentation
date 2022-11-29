@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Node.js Documentation</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main-body">
+		<nav id="navbar">
+            <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp">
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" alt="image load failed!"  width="270" height="185">
+            </a>
+            <h1>Node.js Documentation</h1>
+			<a href="#Intro" class="nav-link">
+				What is Node.JS?</a>
+			<a href="#Object" class="nav-link">
+				What Can Node.js Do?</a>
+			<a href="#Inheritance" class="nav-link">
+				What is a Node.js File?</a>
+			<a href="#Polymorphism" class="nav-link">
+				Download Node.js</a>
+			<a href="#Abstraction" class="nav-link">
+				Getting Started</a>
+			<a href="#Encapsulation" class="nav-link">
+				Command Line Interface</a>
+            <a href="#Initiate" class="nav-link">
+                Initiate the Node.js File</a>
+
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="Intro">
+            <br>    
+				<header>
+                    What is Node.JS?
+				</header>
+				<p>
+					<li>Node.js is an open source server environment</li>
+                    <li>Node.js is free</li>
+                    <li>Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li> 
+                    <li>Node.js uses JavaScript on the server</li> 
+				</p>
+				<p>A common task for a web server can be to open a file on the server and return the content to the client.
+
+                    Here is how PHP or ASP handles a file request:
+                    <ol type="1">
+
+                    <li>Sends the task to the computer's file system.</li>
+                    <li>Waits while the file system opens and reads the file.</li>
+                    <li>Returns the content to the client.</li>
+                    <li>Ready to handle the next request.</li>
+                    </ol>
+                    Here is how Node.js handles a file request:
+                    <ol type="1">
+
+                    <li>Sends the task to the computer's file system.</li>
+                    <li>Ready to handle the next request.</li>
+                    <li>When the file system has opened and read the file, the server returns the content to the client.</li>
+                    <li>Node.js eliminates the waiting, and simply continues with the next request.</li>
+                    </ol>
+
+                    Node.js runs single-threaded, non-blocking, asynchronous programming, which is very memory efficient.
+                    <br>
+                    <br>
+			</section>
+
+			<section class="main-section" id="Object">
+				<header>
+                    What can Node.JS Do?
+				</header>
+                <br>
+				<li>Node.js can generate dynamic page content</li>
+                <li>Node.js can create, open, read, write, delete, and close files on the server</li>
+                <li>Node.js can collect form data</li>
+                <li>Node.js can add, delete, modify data in your database</li>
+                <br>
+			</section>
+
+			<section class="main-section" id="Inheritance">
+				<header>
+					What is a Node.js File?
+				</header>
+                <br>
+                <li>Node.js files contain tasks that will be executed on certain events</li>
+                <li>A typical event is someone trying to access a port on the server</li>
+                <li>Node.js files must be initiated on the server before having any effect</li>
+                <li>Node.js files have extension ".js"</li>
+                <br>
+			</section>
+
+			<section class="main-section" id="Polymorphism">
+				<header>
+					Download Node.js
+				</header>
+				<br>
+                The official Node.js website has installation instructions for Node.js: <a href="https://nodejs.org">https://nodejs.org</a>
+                <br>
+                <br>
+				
+			</section>
+
+			<section class="main-section" id="Abstraction">
+				<header>
+					Getting Started
+				</header>
+
+				<p>
+					Once you have downloaded and installed Node.js on your computer, let's try to display "Hello World" in a web browser.
+
+                    Create a Node.js file named "myfirst.js", and add the following code:
+				</p>
+                <code id="example">
+                    <span>
+                    myfirst.js<iostream>     </span>
+                    <br>
+                    <br>
+                    <span></span>var http = require('http'); </span>
+                    <br>
+                    <br>
+                    <span></span>http.createServer(function (req, res) { </span>
+                        <br>
+                        <span>   &emsp;res.writeHead(200, {'Content-Type': 'text/html'}); </span>
+                      <br>
+                      <span>  &emsp;res.end('Hello World!'); </span>
+                      <br>
+                      <span>   }).listen(8080); </span>
+                    <br>
+                </code>
+                <br>
+                Save the file on your computer: C:\Users\Your Name\myfirst.js
+                <br>
+                <br>
+                The code tells the computer to write "Hello World!" if anyone (e.g. a web browser) tries to access your computer on port 8080.
+                <br>
+                <br>
+                For now, you do not have to understand the code. It will be explained later.
+                <br>
+                <br>
+			</section>
+
+			<section class="main-section" id="Encapsulation">
+				<header>
+					Command Line Interface
+				</header>
+				<p>
+                    Node.js files must be initiated in the "Command Line Interface" program of your computer.
+                    <br>
+                    <br>
+                    How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for "Command Prompt", or simply write "cmd" in the search field.
+                    <br>
+                    <br>
+                    Navigate to the folder that contains the file "myfirst.js", the command line interface window should look something like this:
+                    <br>
+                    <br>
+                    <code id="command">
+                        C:\Users\Your Name>_
+                    </code>
+                </p>
+			</section>
+
+            <section class="main-section" id="Initiate">
+				<header>
+                    Initiate the Node.js File
+				</header>
+				<p>
+                    The file you have just created must be initiated by Node.js before any action can take place.
+                    <br>
+                    <br>
+                    Start your command line interface, write node myfirst.js and hit enter:
+                    <br>
+                    <br>
+                    <code id="command">
+                        C:\Users\Your Name>node myfirst.js
+                    </code>
+                    <br>
+                    Now, your computer works as a server!
+                    <br>
+                    <br>
+                    If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
+                    <br>
+                    <br>
+                    Start your internet browser, and type in the address: <a href="http://localhost:8080">http://localhost:8080</a>
+                    <br>
+                    <br>
+                </p>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+*{
+    background-color: #b3b3b3;
+    font-family: "Veranda", sans-serif;
+    color:#303030
+
+}
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+    border-radius: 25px;
+}
+
+nav#navbar a {
+    text-align: center;
+	display: block;
+	border: 1px solid #181818;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: white; 
+    border-radius: 25px;
+    background-color: #303030;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+    color: #68A063
+}
+
+h1 {
+    color:#3C873A
+}
+code {
+	background-color: #CCC;
+	display: block;
+	padding: 20px;
+}
+code#example span{
+    background-color:#CCC;
+}
+code#command {
+	background-color: #181818;
+    color: white;
+}
